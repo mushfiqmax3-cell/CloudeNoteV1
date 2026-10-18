@@ -2,8 +2,8 @@ name: Build Android APK
 
 on:
   push:
-    branches: [ "main" ] # আপনার ব্রাঞ্চের নাম 'master' হলে main-এর বদলে master লিখুন
-  workflow_dispatch: # এটি দিলে ম্যানুয়ালি যেকোনো সময় বিল্ড রান করা যায়
+    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -19,8 +19,15 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+
+      - name: Generate Gradle Wrapper if missing
+        run: |
+          if [ ! -f "gradlew" ]; then
+            gradle wrapper
+          fi
+          chmod +x gradlew
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug
@@ -28,6 +35,6 @@ jobs:
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: my-app-debug-apk
-          path: app/build/outputs/apk/debug/app-debug.apk
+          name: CloudeNote-APK
+          path: "**/build/outputs/apk/debug/*.apk"
           
