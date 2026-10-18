@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Rounded Notebook Squircle Silhouette -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M34,26 C30.69,26 28,28.69 28,32 L28,76 C28,79.31 30.69,82 34,82 L74,82 C77.31,82 80,79.31 80,76 L80,32 C80,28.69 77.31,26 74,26 L34,26 Z M35,32 L73,32 C73.55,32 74,32.45 74,33 L74,75 C74,75.55 73.55,76 73,76 L35,76 C34.45,76 34,75.55 34,75 L34,33 C34,32.45 34.45,32 35,32 Z" />
+    <!-- Three Horizontal Text Lines inside Notebook -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M41,43 L60,43 C61.66,43 63,44.34 63,46 C63,47.66 61.66,49 60,49 L41,49 C39.34,49 38,47.66 38,46 C38,44.34 39.34,43 41,43 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M41,53 L67,53 C68.66,53 70,54.34 70,56 C70,57.66 68.66,59 67,59 L41,59 C39.34,59 38,57.66 38,56 C38,54.34 39.34,53 41,53 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M41,63 L55,63 C56.66,63 58,64.34 58,66 C58,67.66 56.66,69 55,69 L41,69 C39.34,69 38,67.66 38,66 C38,64.34 39.34,63 41,63 Z" />
+    <!-- Active Cloud Sync Dot -->
+    <path
+        android:fillColor="#FF10B981"
+        android:pathData="M67,43 m-4.5,0 a4.5,4.5 0 1,0 9,0 a4.5,4.5 0 1,0 -9,0" />
+</vector>

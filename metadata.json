@@ -1,0 +1,6 @@
+{
+  "name": "CloudNote Studio",
+  "description": "Minimalist monochrome Bengali & Markdown note-taking studio with 7-mode theme engine, auto-chunking, PIN lock, PDF/DOC/MD/TXT export, Gemini AI assistant, and offline-to-online cloud sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
